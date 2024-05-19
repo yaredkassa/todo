@@ -1,15 +1,116 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <title>ToDoList App</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous" defer></script>
-  <script src="scripts/index.js" type="module"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ToDoList App</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"
+      integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="scripts/index.js" type="module"></script>
 
-  <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
-<h1>ToDoList</h1>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <h1>ToDoList</h1>
 
-</body>
+    <div class="button-container">
+      <button type="button" id="myButton1" class="main_button">
+        Create todo
+      </button>
+      <button type="button" id="myButton2" class="main_button">
+        Toggle style
+      </button>
+    </div>
+
+    <div class="button-container2">
+      <div class="left-buttons">
+        <button type="button" id="myButton3" class="main_button with-arrow">
+          Name
+        </button>
+        <button type="button" id="myButton4" class="main_button">
+          By Due Date
+        </button>
+        <button type="button" id="myButton5" class="main_button">
+          By Creation Date
+        </button>
+        <button type="button" id="myButton6" class="main_button">
+          By Importance
+        </button>
+      </div>
+      <div class="right-button">
+        <button type="button" id="myButton7" class="main_button">
+          Filter completed
+        </button>
+      </div>
+    </div>
+
+    <div class="todo-lists">
+      <table>
+        <!--thead>
+          <tr>
+           <th>Header</th>
+          </tr>
+        </thead -->
+        <tbody>
+          <tr>
+            <div class="row_container">
+              <div class="raw_container_content">
+                <div class="input-container">
+                  <div class="input-group">
+                    <p  class="input_text">Day</p>
+                    
+                    <p class="input_text">Open</p>
+                  </div>
+                  <div class="sub-group">
+                    <p  class="input_text">Task</p>
+                  
+                    <p class="input_text">Description</p>
+                  </div>
+                </div>
+                <div class="edit-container">
+                  <span id="mytext3" class="input_text">♥♥♥♥♥</span>
+                  <button type="button" id="myButton2" class="main_button">
+                    Edit
+                  </button>
+                </div>
+              </div>
+              <hr />
+              <br />
+            </div>
+          </tr>
+
+
+          <tr>
+            <div class="row_container">
+              <div class="raw_container_content">
+                <div class="input-container">
+                  <div class="input-group">
+                    <p  class="input_text">Day</p>
+                    
+                    <p class="input_text">Open</p>
+                  </div>
+                  <div class="sub-group">
+                    <p  class="input_text">Task</p>
+                  
+                    <p class="input_text">Description</p>
+                  </div>
+                </div>
+                <div class="edit-container">
+                  <span id="mytext3" class="input_text">♥♥♥♥♥</span>
+                  <button type="button" id="myButton2" class="main_button">
+                    Edit
+                  </button>
+                </div>
+              </div>
+              <hr />
+              <br />
+            </div>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
 </html>
